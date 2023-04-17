@@ -1,0 +1,49 @@
+{
+    "name": "infinity-logger",
+    "version": "1.0.0",
+    "description": "Custom Logger used by Infinity Bot List",
+    "main": "./dist/logger.js",
+
+    "author": "InfinityBotList",
+    "license": "PRIVATE",
+    "homepage": "https://botlist.site",
+
+    "types": "./dist/logger.d.ts",
+
+    "bugs": {
+        "url": "git+https://github.com/InfinityBotList/infinity-logger"
+    },
+
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/InfinityBotList/infinity-logger"
+      },
+
+    "scripts": {
+        "build": "tsc",
+        "build:ci": "npm i --also=dev && tsc",
+        "prepublishOnly": "npm run build:ci",
+        "lint": "eslint src/**/*.ts",
+        "lint:ci": "eslint --output-file eslint_report.json --format json src/**/*.ts",
+        "prepare": "npx husky install"
+      },
+      "devDependencies": {
+        "ibl-esl-config": "^1.0.0",
+        "@types/node": "^14.14.41",
+        "@types/node-fetch": "^2.5.10",
+        "@typescript-eslint/eslint-plugin": "^4.26.0",
+        "@typescript-eslint/parser": "^4.26.0",
+        "eslint": "^7.27.0",
+        "eslint-config-prettier": "^8.3.0",
+        "eslint-plugin-jest": "^24.3.6",
+        "express": "^4.17.1",
+        "husky": "^6.0.0",
+        "lint-staged": "^11.0.0",
+        "prettier": "^2.3.0",
+        "typescript": "^4.2.4"
+      },
+      "dependencies": {
+        "chalk": "^4.1.2",
+        "moment": "^2.29.1"
+      }
+}

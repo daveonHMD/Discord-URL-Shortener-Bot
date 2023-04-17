@@ -1,0 +1,20 @@
+{
+  "name": "ibl-esl-config",
+  "version": "1.0.0",
+  "description": "ESLint Config for the Infinity Bot List API",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint ."
+  },
+  "peerDependencies": {
+    "@typescript-eslint/eslint-plugin": "^4.21.0",
+    "@typescript-eslint/parser": "^4.21.0",
+    "eslint": ">=7.00.0"
+  },
+  "keywords": [
+    "eslint-config"
+  ],
+  "author": "TheRealToxicDev",
+  "license": "ISC"
+}
